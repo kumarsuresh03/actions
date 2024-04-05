@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
 
-# Start the WebDriver and open the HTML page
+
 service = Service(executable_path='/usr/local/bin/chromedriver')
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
