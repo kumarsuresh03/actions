@@ -8,12 +8,12 @@ options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(service=service, options=options)
-driver.get("https://scifigurmeet.github.io/demowebsite/")  # Update this with the path to your HTML file
+driver.get("https://kumarsuresh03.github.io/actions/")  # Update this with the path to your HTML file
 
 time.sleep(2)  # Adding a delay to see the result
 
 # Assert some condition to verify the result
-assert "" in driver.title
+assert "Sample Project" in driver.title
 
 # Take a screenshot
 timestamp = time.strftime("%Y%m%d-%H%M%S")
